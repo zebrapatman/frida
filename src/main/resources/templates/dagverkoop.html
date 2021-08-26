@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments::head(title='Dagverkoop')"></head>
+<body>
+<header th:replace="fragments::header"></header>
+<nav th:replace="fragments::menu"></nav>
+
+<table xmlns:th="http://www.thymeleaf.org">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Naam</th>
+        <th>Aantal</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="dagverkoop : ${dagverkopen}" th:object="${dagverkoop}" >
+        <td th:text="*{id}"></td>
+        <td th:text="*{naam}" class="getal"></td>
+        <td th:text="*{aantal}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

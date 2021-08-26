@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+body{
+    font-family: 'Permanent Marker', cursive;
+}
+header {
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 25px;
+    box-shadow: 5px 10px;
+    background: url("../images/franse-frietjes.jpg") center no-repeat;
+    background-color: white;
+    background-size: 100% auto;
+}
+header h1 {
+    text-shadow: 2px 2px 1px white;
+}
+footer {
+    text-align: center;}
+.closed{
+    color: #BB2B1B;
+    text-align: center;
+}
+
+dl:nth-child(even) {
+    background-color: #FAFABA;
+}
+
+dl:nth-child(odd) {
+    background-color: #FAFAFA;
+}
+
+dl:hover {
+    background-color: gold;
+}
+nav ul {
+    background-color: gold;
+    padding: 0.4em 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    color: white;
+    font-weight: bold;
+    padding-left: 0.5em;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+nav li a:hover {
+    color: black;
+}
+.alfabet{
+    text-align: center;
+}
+.alfabet a{
+    color: black;
+    padding: 2px;
+    text-decoration: none;
+}
+.alfabet a:hover{
+    color: red;
+}
